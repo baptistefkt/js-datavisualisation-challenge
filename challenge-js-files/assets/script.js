@@ -94,9 +94,47 @@ parentDiv3.insertBefore(div3, beforeDiv3);
 
 //first Chart
 
-let svg1 = dimple.newSvg("#chartContainer1", 800, 600);
+let svg1 = dimple.newSvg("#chartContainer1", 800, 800);
 let myChart1 = new dimple.chart(svg1, data1);
-var myLegend1 = myChart1.addLegend(200, 140, 500, 500);
+var myLegend1 = myChart1.addLegend(200, 200, 500, 500);
+myChart1.defaultColors = [
+    new dimple.color("#FF1493"),
+    new dimple.color("#4B0082"),
+    new dimple.color("#9370DB"),
+    new dimple.color("#F08080"),
+    new dimple.color("#FF0000"),
+    new dimple.color("#A52A2A"),
+    new dimple.color("#FFDAB9"),
+    new dimple.color("#FFA500"),
+    new dimple.color("#FF8C00"),
+    new dimple.color("#D2691E"),
+    new dimple.color("#FFFF00"),
+    new dimple.color("#9ACD32"),
+    new dimple.color("#556B2F"),
+    new dimple.color("#00FA9A"),
+    new dimple.color("#778899"),
+    new dimple.color("#696969"),
+    new dimple.color("#C0C0C0"),
+    new dimple.color("#CDCD0D"),
+    new dimple.color("#960018"),
+    new dimple.color("#B36700"),
+    new dimple.color("#000010"),
+    new dimple.color("#8B6C42"),
+    new dimple.color("#B9B276"),
+    new dimple.color("#C60800"),
+    new dimple.color("#FEA500"),
+    new dimple.color("#9966ff"),
+    new dimple.color("#ddccff"),
+    new dimple.color("#006666"),
+    new dimple.color("#ff6600"),
+    new dimple.color("#391313"),
+    new dimple.color("#FEA700"),
+    new dimple.color("#FCA500"),
+    new dimple.color("#0000ff"),
+    new dimple.color("#FAA500"),
+    new dimple.color("#ffff99"),
+    new dimple.color("#1a1a00"),
+]
 myChart1.addCategoryAxis("x", "year");
 myChart1.addMeasureAxis("y", "infractions");
 myChart1.addSeries("country", dimple.plot.line);
@@ -124,4 +162,7 @@ function drawChart(){
     myChart3.addMeasureAxis("y", "Nombre de bébé(s) chat(s) torturé(s) en Belgique en temps réel");
     myChart3.addSeries(null, dimple.plot.line);
     myChart3.draw();
+    // myChart.setStoryboard("Date");
+    //setTimeout(function(){myChart3.draw()},1000);
+
 }
