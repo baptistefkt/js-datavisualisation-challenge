@@ -29,3 +29,6 @@ Ce projet a été réalisé par [Baptiste Firket](https://github.com/baptistefkt
 Version beta terminée le 13/07/2018
 Je souhaite encore améliorer le rendu des graphiques.
 
+## Lien vers le site 
+
+[Ici](https://baptistefkt.github.io/js-datavisualisation-challenge/challenge-js-files/index.html)
